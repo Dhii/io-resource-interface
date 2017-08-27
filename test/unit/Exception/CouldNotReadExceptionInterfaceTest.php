@@ -55,7 +55,6 @@ class ResourceExceptionInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the subject could not be created');
-        $this->assertInstanceOf('Dhii\Exception\ThrowableInterface', $subject, 'Subject does not implement required interface');
         $this->assertInstanceOf('Dhii\Io\Resource\ResourceAwareInterface', $subject, 'Subject does not implement required interface');
     }
 }
