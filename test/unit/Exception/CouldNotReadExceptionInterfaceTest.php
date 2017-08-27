@@ -3,21 +3,21 @@
 namespace Dhii\Io\Resource\UnitTest\Exception;
 
 use Xpmock\TestCase;
-use Dhii\Io\Resource\Exception\ResourceExceptionInterface as TestSubject;
+use Dhii\Io\Resource\Exception\CouldNotReadExceptionInterface as TestSubject;
 
 /**
  * Tests {@see TestSubject}.
  *
  * @since [*next-version*]
  */
-class ResourceExceptionInterfaceTest extends TestCase
+class CouldNotReadExceptionInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Io\Resource\Exception\ResourceExceptionInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Io\Resource\Exception\CouldNotReadExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
@@ -55,6 +55,6 @@ class ResourceExceptionInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the subject could not be created');
-        $this->assertInstanceOf('Dhii\Io\Resource\ResourceAwareInterface', $subject, 'Subject does not implement required interface');
+        $this->assertInstanceOf('Dhii\Io\Resource\Exception\ResourceExceptionInterface', $subject, 'Subject does not implement required interface');
     }
 }
