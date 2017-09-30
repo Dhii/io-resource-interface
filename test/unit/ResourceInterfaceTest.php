@@ -30,6 +30,8 @@ class ResourceInterfaceTest extends TestCase
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
                 ->isOpen()
+                ->close()
+                ->getSize()
                 ->new();
 
         return $mock;

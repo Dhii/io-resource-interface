@@ -30,6 +30,8 @@ class ReadableResourceInterfaceTest extends TestCase
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
                 ->isOpen()
+                ->close()
+                ->getSize()
                 ->read()
                 ->new();
 
