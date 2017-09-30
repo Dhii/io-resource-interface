@@ -24,7 +24,7 @@ interface ResourceInterface
      * @since [*next-version*]
      *
      * @return bool True if the resource was successfully closed;
-     * false if already closed.
+     *              false if already closed.
      */
     public function close();
 
