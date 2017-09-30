@@ -33,6 +33,8 @@ class ReadableResourceInterfaceTest extends TestCase
                 ->close()
                 ->getSize()
                 ->read()
+                ->eof()
+                ->__toString()
                 ->new();
 
         return $mock;
