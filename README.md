@@ -33,6 +33,12 @@ meaning, but not all resources are streams. A resource object can allow writing
 to a variable in memory, not only to an actual stream or file. A database
 connection could also be a resource, and one could execute queries by writing
 to such a resource.
+5. Provide better, more specialized exceptions. We believe that when a
+component with a narrow purpose, such as a resource, throws an exception, it
+should be possible for high-level code to get information about what went wrong
+without prior knowledge of the component's implementation, and without having
+prior reference to it. This allows exception handlers to be more de-coupled and
+self-contained, increasing SoC and interoperability.
 
 ### Compatibility
 Interfaces in this package are mostly compatible with the [`StreamInterface`]
