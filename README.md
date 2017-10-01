@@ -37,7 +37,7 @@ to such a resource.
 ### Compatibility
 Interfaces in this package are mostly compatible with the [`StreamInterface`]
 interface defined in PSR-7, albeit splitting it into more segregated parts. One major
-difference is that `ReadableResourceInterface#__toString()` is not expected to
+difference is that [`ReadableResourceInterface#__toString()`] is not expected to
 seek to the beginning of the resource, but may simply return the remainder of
 the content. This is mainly because seeking capabilities are separated from
 reading capabilities. If implementations wish to be compatible with that
