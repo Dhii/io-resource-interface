@@ -9,7 +9,7 @@
 Interfaces for resource interoperability.
 
 ## Details
-This package aims accomplish these main goals:
+This package aims to accomplish these main goals:
 
 1. Provide a standard for stream interoperability that is separate from [PSR-7].
 The PSR-7 standard is large and unwieldly, and we felt like streaming is a
